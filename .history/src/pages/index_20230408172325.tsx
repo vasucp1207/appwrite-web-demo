@@ -10,7 +10,7 @@ export default function Home() {
         theme='light' 
         routePush='/room'
         routeSign='https://amazing-cocada-e388a8.netlify.app/'
-        routeRst='https://amazing-cocada-e388a8.netlify.app/reset'
+        routeRst='http://localhost:3000/reset'
       />
     </div>
   )
