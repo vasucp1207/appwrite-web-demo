@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useLogedAccount, useLogOut, useDelelteDocument, useListDocuments, useCreateDocuments, useUpdateDocument, useGetDocument, useConfig } from 'appwrite-web-react';
+import { useLogedAccount, useLogOut, useDelelteDocument, useListDocuments, useCreateDocuments, useUpdateDocument } from 'appwrite-web-react';
 import { client, account, database } from '../../utils/utils';
 
 function room() {
@@ -15,8 +15,6 @@ function room() {
 
   let { data: movies, error } = useListDocuments(client, database, '6419e430d6e729855247', '641ac8e4d587151104b5');
   let { data: user } = useLogedAccount(account);
-
-  const { data } = useGetDocument(database, '', '', '');
 
   function submitMovie() {
     useCreateDocuments({
