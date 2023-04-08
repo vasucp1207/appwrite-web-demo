@@ -3,6 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { account } from '../../utils/utils';
 
 export default function Home() {
+  
   return (
     <div>
       <SignInEmail 
