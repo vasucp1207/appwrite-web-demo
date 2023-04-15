@@ -22,7 +22,7 @@ export default function Home() {
         routeRst='http://localhost:3000/reset'
       />}
 
-      {oath && <SignInOauth account={account} theme='light' />}
+      {oath && <SignInOauth account={account} theme='light' routePush='/room' />}
     </div>
   )
 }
